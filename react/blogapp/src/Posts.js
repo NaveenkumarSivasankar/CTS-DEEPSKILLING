@@ -18,7 +18,17 @@ class Posts extends Component {
         throw new Error('Failed to fetch posts');
       }
       const data = await response.json();
-      const posts = data.map((item) => new Post(item.userId, item.id, item.title, item.body));
+      const posts = data.map((item) => {
+        const professionalTitle = item.title
+          ? `${item.title.charAt(0).toUpperCase()}${item.title.slice(1)}`
+          : 'Professional Insight';
+
+        const professionalBody = item.body
+          ? `This article explores ${item.title.toLowerCase()} in a thoughtful and professional manner. It presents practical insights, highlights key ideas, and offers a clear perspective for readers who value reliable and well-structured information.`
+          : 'This post provides a professional overview of the topic with clear insights and practical perspective.';
+
+        return new Post(item.userId, item.id, professionalTitle, professionalBody);
+      });
       this.setState({ posts, loading: false, error: null });
     } catch (error) {
       this.setState({ loading: false, error: error.message });
