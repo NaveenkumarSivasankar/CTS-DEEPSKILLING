@@ -1,14 +1,9 @@
 import CohortDetails from "./CohortDetails";
+import cohorts from "../data/cohorts";
 
-function CohortList({ cohorts }) {
+function CohortList() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-      }}
-    >
+    <div className="cohort-list">
       {cohorts.map((cohort) => (
         <CohortDetails key={cohort.id} cohort={cohort} />
       ))}
