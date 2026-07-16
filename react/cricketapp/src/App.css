@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 6px;
+  margin-top: 30px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+li {
+  padding: 4px 0;
+  font-size: 16px;
+}
