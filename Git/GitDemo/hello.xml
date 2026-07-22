@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<greeting>
+    <message>Hello from GitWork Branch!</message>
+    <author>Naveenkumar Sivasankar</author>
+    <description>This file was created in the GitWork branch</description>
+</greeting>
