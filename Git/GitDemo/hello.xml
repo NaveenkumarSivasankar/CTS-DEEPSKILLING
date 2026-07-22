@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<greeting>
+    <message>Hello from Master Branch!</message>
+    <author>CTS Deep Skilling Team</author>
+    <description>This file was created in the master branch</description>
+</greeting>
