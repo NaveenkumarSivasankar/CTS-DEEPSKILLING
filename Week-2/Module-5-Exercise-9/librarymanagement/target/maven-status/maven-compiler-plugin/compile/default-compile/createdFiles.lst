@@ -1,4 +1,0 @@
-com\library\entity\Book.class
-com\library\repository\BookRepository.class
-com\library\librarymanagement\LibrarymanagementApplication.class
-com\library\controller\BookController.class
